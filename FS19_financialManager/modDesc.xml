@@ -13,16 +13,16 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	<iconFilename>images/fmStoreIcon.dds</iconFilename>
 	<version>0.0.0.1</version>
 	<l10n filenamePrefix="modDesc_l10n">
-		<text name="masVERSION">
+		<text name="fmVersion">
 			<en>FinancialManager 0.0.0.1</en>
 		</text>
 	</l10n>
 	
 	<actions>
-		<action name="masSETTINGS"  category="?"/>
+		<action name="fmSettings"  category="?"/>
 	</actions>
 	<inputBinding>
-		<actionBinding action="masSETTINGS">	
+		<actionBinding action="fmSettings">	
 			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_f"      axisComponent="+" inputComponent="+" index="1"/>
 		</actionBinding>	
 	</inputBinding>

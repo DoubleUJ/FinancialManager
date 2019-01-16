@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<!-- Note that 'description' is only here for easier translations. It needs to be manually copied to ModDesc.XML later. -->
+	<description><![CDATA[Voegt specialisatie toe financiële manager]]></description>
+
+	<texts>
+		<text name="fmSettings"        	text="Financiële Manager"/>
+				                               
+		<text name="input_fmSettings"  	text="Financial Manager: Activeren"/>
+	</texts>
+	
+	<longTexts>
+		<longText name="fm_Help_1">
+<![CDATA[
+Nog in te vullen.]]>
+		</longText>
+	</longTexts>
+</l10n>
