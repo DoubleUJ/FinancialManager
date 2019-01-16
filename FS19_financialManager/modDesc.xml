@@ -27,7 +27,7 @@ A userinterface for managing financials in multi-player and dedicated server mod
 		</actionBinding>	
 	</inputBinding>
 	
-<!-- Dit is een test
+<!-- 
 	<extraSourceFiles>
 		<sourceFile filename="keyboardSteerMogli.lua" />
 		<sourceFile filename="keyboardSteerMogliScreen.lua" />
