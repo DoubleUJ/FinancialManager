@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="42">
+
 	<author>MaxAgriSim</author>
 	<title>
 		<en>Financial Manager</en>
@@ -8,7 +9,7 @@
 	<description>
 		<en><![CDATA[
 A userinterface for managing financials in multi-player and dedicated server mode.
-]]></en>
+]]></en>		
 		<nl><![CDATA[
 	Een gebruikersinterface om het financiele gedeelte voor het huren van voertuigen onder spelers af te handelen in multi-player en dedicated server modus.
 ]]></nl>
@@ -19,7 +20,7 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	<l10n filenamePrefix="modDesc_l10n">
 		<text name="fmVersion">
 			<en>FinancialManager 0.0.0.1</en>
-			<nl>FinancialManager 0.0.0.1</nl>
+			<nl>FinancialManager 0.0.0.1</nl>	
 		</text>
 	</l10n>
 	
@@ -32,10 +33,8 @@ A userinterface for managing financials in multi-player and dedicated server mod
 		</actionBinding>	
 	</inputBinding>
 	
-	<!-- extraSourceFiles>
-		<sourceFile filename="keyboardSteerMogli.lua" />
-		<sourceFile filename="keyboardSteerMogliScreen.lua" />
-		<sourceFile filename="register.lua" />
-	</extraSourceFiles -->
+	<extraSourceFiles>
+		<sourceFile filename="scripts/fmMain.lua" />
+	</extraSourceFiles>
   
 </modDesc>
