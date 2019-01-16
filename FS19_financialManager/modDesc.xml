@@ -3,11 +3,15 @@
 	<author>MaxAgriSim</author>
 	<title>
 		<en>Financial Manager</en>
+		<nl>Financial Manager</nl>
 	</title>
 	<description>
 		<en><![CDATA[
 A userinterface for managing financials in multi-player and dedicated server mode.
 ]]></en>
+		<nl><![CDATA[
+	Een gebruikersinterface om het financiele gedeelte voor het huren van voertuigen onder spelers af te handelen in multi-player en dedicated server modus.
+]]></nl>
 	</description>
 	<multiplayer supported="true"/>   
 	<iconFilename>images/fmStoreIcon.dds</iconFilename>
@@ -15,11 +19,12 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	<l10n filenamePrefix="modDesc_l10n">
 		<text name="fmVersion">
 			<en>FinancialManager 0.0.0.1</en>
+			<nl>FinancialManager 0.0.0.1</nl>
 		</text>
 	</l10n>
 	
 	<actions>
-		<action name="fmSettings"  category="?"/>
+		<action name="fmSettings"  category="ONFOOT"/>
 	</actions>
 	<inputBinding>
 		<actionBinding action="fmSettings">	
