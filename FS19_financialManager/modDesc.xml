@@ -19,7 +19,7 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	</l10n>
 	
 	<actions>
-		<action name="fmSettings"  category="?"/>
+		<action name="fmSettings"  category="ONFOOT"/>
 	</actions>
 	<inputBinding>
 		<actionBinding action="fmSettings">	
@@ -27,11 +27,10 @@ A userinterface for managing financials in multi-player and dedicated server mod
 		</actionBinding>	
 	</inputBinding>
 	
-<!-- 
-	<extraSourceFiles>
+	<!-- extraSourceFiles>
 		<sourceFile filename="keyboardSteerMogli.lua" />
 		<sourceFile filename="keyboardSteerMogliScreen.lua" />
 		<sourceFile filename="register.lua" />
-	</extraSourceFiles>
--->   
+	</extraSourceFiles -->
+  
 </modDesc>
