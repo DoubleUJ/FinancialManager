@@ -7,7 +7,6 @@
 
 fmMain = {}
 
-
 function fmMain:loadMap(...)
     self.cont = 4
     self.eventIdActive = ""
@@ -22,16 +21,18 @@ function fmMain:mouseEvent(...)
 end
 
 function fmMain:keyEvent(...)
-fmMain
+end
 
-function fmMain:update(dt)
+function fmMain:activateScreen()
+	print("Hello World i'm activated by pressing a key!")
+end
+
+function fmMain:update(dt)  
     if g_gui.currentGui == nil and g_currentMission.controlledVehicle == nil then -- only if no vehicle is entered or menu is up
 
         if not self.inputsActive then -- register input events
-            _, self.eventIdActive = g_inputBinding:registerActionEvent(InputAction.fmHomeScreen, fmMain, fmMain.reduceSpeed, false, true, false, false)
+            _, self.eventIdActive = g_inputBinding:registerActionEvent(InputAction.fmHomeScreen, fmMain, fmMain.activateScreen, false, true, false, false)
             self.inputsActive = true
-            print("Hello World i'm activated by pressing a key!")
-
         end
     else
         self.inputsActive = false
@@ -41,5 +42,5 @@ end
 function fmMain:draw()
 end
 
-print("  Loaded SpeedPlayer Mod...")
+print("  Loaded FinancialManager Mod...")
 addModEventListener(fmMain)
