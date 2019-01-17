@@ -5,6 +5,8 @@
 -- changelog
 -- 1.00 First implementation 
 
-function function_name( ... )
+fmMain = {}
+
+function fmMain.function_name( ... )
     -- body
 end
