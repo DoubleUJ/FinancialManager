@@ -14,7 +14,7 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	Een gebruikersinterface om het financiele gedeelte voor het huren van voertuigen onder spelers af te handelen in multi-player en dedicated server modus.
 ]]></nl>
 	</description>
-	<multiplayer supported="true"/>   
+	<multiplayer supported="false"/>   
 	<iconFilename>images/fmStoreIcon.dds</iconFilename>
 	<version>0.0.0.1</version>
 	<l10n filenamePrefix="modDesc_l10n">
@@ -25,11 +25,11 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	</l10n>
 	
 	<actions>
-		<action name="fmSettings"  category="ONFOOT"/>
+		<action name="fmHomeScreen" category="ONFOOT" />
 	</actions>
 	<inputBinding>
-		<actionBinding action="fmSettings">	
-			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_f"      axisComponent="+" inputComponent="+" index="1"/>
+		<actionBinding action="fmHomeScreen">	
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_c"      axisComponent="+" inputComponent="+" index="1"/>
 		</actionBinding>	
 	</inputBinding>
 	
