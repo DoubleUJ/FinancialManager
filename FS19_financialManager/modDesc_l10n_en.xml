@@ -4,9 +4,9 @@
 	<description><![CDATA[Adds the specialization for financial manager]]></description>
 
 	<texts>
-		<text name="fmSettings"        text="Financial Manager"/>
+		<text name="fmHomeScreen"        text="Financial Manager"/>
                               
-		<text name="input_fmSettings"  text="Financial Manager: Activate"/>
+		<text name="input_fmHomeScreen"  text="Financial Manager: Activate"/>
 	</texts>
 
 	<longTexts>
