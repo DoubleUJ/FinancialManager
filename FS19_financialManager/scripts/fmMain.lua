@@ -1,9 +1,9 @@
 --
 -- Financial Manager
--- MaxAgrisim
+-- ©2019 by MaxAgriSim
 -- 
 -- changelog
--- 1.00 First implementation 
+-- 0.0.0.1      First implementation 
 
 fmMain = {}
 
@@ -52,5 +52,5 @@ end
 function fmMain:draw()
 end
 
-print("  Loaded FinancialManager Mod...")
+print("  Loaded Financial Manager Mod...")
 addModEventListener(fmMain)
