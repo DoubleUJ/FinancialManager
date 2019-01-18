@@ -1,5 +1,6 @@
 <activities>
-    <activity name="Transportation"         priceperhour="65.00" priceperpiece=""        priceperha=""  priceperm3=""/>
-    <activity name="Baling"                 priceperhour=""      priceperpiece="16.00"   priceperha=""  priceperm3=""/>
-    <activity name="Baling and wrapping"    priceperhour=""      priceperpiece="28.00"   priceperha=""  priceperm3=""/>
+    <activity name="Transportation"         priceperhour="65.00"    priceperpiece=""        priceperha=""       priceperm3=""/>
+    <activity name="Baling"                 priceperhour=""         priceperpiece="16.00"   priceperha=""       priceperm3=""/>
+    <activity name="Baling and wrapping"    priceperhour=""         priceperpiece="28.00"   priceperha=""       priceperm3=""/>
+    <activity name="Mowing Krone BigM"      priceperhour="182.50"   priceperpiece=""        priceperha="8.25"   priceperm3=""/>
 </activities>

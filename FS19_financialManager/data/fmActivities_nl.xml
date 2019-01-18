@@ -1,0 +1,6 @@
+<activities>
+    <activity name="Transport en vervoer"           priceperhour="65.00"    priceperpiece=""        priceperha=""       priceperm3=""/>
+    <activity name="Balen persen"                   priceperhour=""         priceperpiece="16.00"   priceperha=""       priceperm3=""/>
+    <activity name="Balen persen en wikkelen"       priceperhour=""         priceperpiece="28.00"   priceperha=""       priceperm3=""/>
+    <activity name="Graslaan maaien met Krone BigM" priceperhour="182.50"   priceperpiece=""        priceperha="8.25"   priceperm3=""/>
+</activities>
