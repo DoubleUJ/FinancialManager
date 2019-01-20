@@ -29,7 +29,7 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	</actions>
 	<inputBinding>
 		<actionBinding action="fmHomeScreen">	
-			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_f"      axisComponent="+" inputComponent="+" index="1"/>
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_f" axisComponent="+" inputComponent="+" index="1"/>
 		</actionBinding>	
 	</inputBinding>
 	
