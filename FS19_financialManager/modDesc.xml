@@ -25,7 +25,7 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	</l10n>
 	
 	<actions>
-		<action name="fmHomeScreen" category="ONFOOT" />
+		<action name="fmHomeScreen"/>
 	</actions>
 	<inputBinding>
 		<actionBinding action="fmHomeScreen">	

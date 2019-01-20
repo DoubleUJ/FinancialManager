@@ -30,17 +30,15 @@ end
 function fmMain:update()  
     --print("Ik zit nu in de update")
     if g_gui.currentGui == nil and g_currentMission.controlledVehicle == nil then -- only if no vehicle is entered or menu is up
-        print(self.inputsActive)        
+        -- print(self.inputsActive)        
         if not self.inputsActive then -- register input events
-            print("Ik zit in de register input")
+            -- print("Ik zit in de register input")
             _, self.eventIdActive = g_inputBinding:registerActionEvent(InputAction.fmHomeScreen, fmMain, fmMain.activateScreen, false, true, false, false)
             self.inputsActive = true
         end
-        
-
+      
         local eventIdActive = self.eventIdActive
-        print("Ik zit net onder de local ")
-
+        -- print("Ik zit net onder de local ")
         g_inputBinding:setActionEventActive(eventIdActive, true)
 		g_inputBinding:setActionEventTextVisibility(eventIdActive, true)
 
