@@ -24,9 +24,7 @@ end
 
 function fmMain:activateScreen()
     print("Hello World i'm activated by pressing a key!")
-    if actionName == "fmHomeScreen" then
-		fmMain.fmShowHomeScreen( self )
-	end
+	fmMain.fmShowHomeScreen( self )
 end
 
 function fmMain:update()  
@@ -39,7 +37,7 @@ function fmMain:update()
         end
       
         local eventIdActive = self.eventIdActive
-        
+             
         g_inputBinding:setActionEventActive(eventIdActive, true)
         g_inputBinding:setActionEventTextVisibility(eventIdActive, true)
         
@@ -49,10 +47,12 @@ function fmMain:update()
 end
 
 function fmMain.fmShowHomeScreen()
+    print("fmShowHomeScreen")
     -- Check if screen excists otherwise make one
     if g_FinancialManagerHomeScreen == nil then
+        print("g_FinancialManagerHomeScreen is nil")
         g_FinancialManagerHomeScreen = FinancialManagerHomeScreen:new()
-        g_gui:loadGui("financialManagerHomeScreen.xml", "financialManagerHomeScreen") --g_keyboardSteerMogliScreen
+        --g_gui:loadGui("financialManagerHomeScreen.xml", "financialManagerHomeScreen") --g_keyboardSteerMogliScreen
     end
 end
 
