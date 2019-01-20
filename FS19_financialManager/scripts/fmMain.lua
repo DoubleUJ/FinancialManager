@@ -23,15 +23,17 @@ function fmMain:keyEvent(...)
 end
 
 function fmMain:activateScreen()
-	print("Hello World i'm activated by pressing a key!")
+    print("Hello World i'm activated by pressing a key!")
+    if actionName == "fmHomeScreen" then
+		fmMain.fmShowHomeScreen( self )
+	end
 end
 
 function fmMain:update()  
     
     if g_gui.currentGui == nil and g_currentMission.controlledVehicle == nil then -- only if no vehicle is entered or menu is up
            
-        if not self.inputsActive then -- register input events
-            
+        if not self.inputsActive then -- register input events    
             _, self.eventIdActive = g_inputBinding:registerActionEvent(InputAction.fmHomeScreen, fmMain, fmMain.activateScreen, false, true, false, false)
             self.inputsActive = true
         end
@@ -39,15 +41,24 @@ function fmMain:update()
         local eventIdActive = self.eventIdActive
         
         g_inputBinding:setActionEventActive(eventIdActive, true)
-		g_inputBinding:setActionEventTextVisibility(eventIdActive, true)
-
+        g_inputBinding:setActionEventTextVisibility(eventIdActive, true)
+        
     else
         self.inputsActive = false
     end
 end
 
+function fmMain.fmShowHomeScreen()
+    -- Check if screen excists otherwise make one
+    if g_FinancialManagerHomeScreen == nil then
+        g_FinancialManagerHomeScreen = FinancialManagerHomeScreen:new()
+        g_gui:loadGui("financialManagerHomeScreen.xml", "financialManagerHomeScreen") --g_keyboardSteerMogliScreen
+    end
+end
+
+
 function fmMain:draw()
 end
 
-print("  Loaded Financial Manager by MaxAgrisim...")
+print("  Loaded Financial Manager by MaxAgrisim   ")
 addModEventListener(fmMain)
