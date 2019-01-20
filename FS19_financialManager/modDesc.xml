@@ -25,11 +25,11 @@ A userinterface for managing financials in multi-player and dedicated server mod
 	</l10n>
 	
 	<actions>
-		<action name="fmHomeScreen" category="ONFOOT" />
+		<action name="FMHOMESCREEN"/>
 	</actions>
 	<inputBinding>
-		<actionBinding action="fmHomeScreen">	
-			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_c"      axisComponent="+" inputComponent="+" index="1"/>
+		<actionBinding action="FMHOMESCREEN">	
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_h"/>
 		</actionBinding>	
 	</inputBinding>
 	
