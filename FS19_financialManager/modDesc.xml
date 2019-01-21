@@ -4,12 +4,16 @@
 	<author>MaxAgriSim</author>
 	<title>
 		<en>Financial Manager</en>
+		<de>Financial Manager</de>
 		<nl>Financial Manager</nl>
 	</title>
 	<description>
 		<en><![CDATA[
 A userinterface for managing financials in multi-player and dedicated server mode.
-]]></en>		
+]]></en>
+		<de><![CDATA[
+Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedicated server modus.
+]]></de>
 		<nl><![CDATA[
 	Een gebruikersinterface om het financiele gedeelte voor het huren van voertuigen onder spelers af te handelen in multi-player en dedicated server modus.
 ]]></nl>
