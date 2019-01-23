@@ -44,16 +44,9 @@ end
 
 function fmMain:fmShowHomeScreen()
     print("START Function fmShowHomeScreen")
-    -- Check if screen excists otherwise make one
-    if g_FinancialManagerHomeScreen == nil then
-        print("   Step 1: g_FinancialManagerHomeScreen is nil")
-        -- TODO variable verwijzing voor aanmaken screen implementeren.
-        g_FinancialManagerHomeScreen = FinancialManagerHomeScreen:new() 
-        print("   Step 2: g_FinancialManagerHomeScreen is " .. g_FinancialManagerHomeScreen)
-        -- g_gui:loadGui("screens/fmHomeScreen.xml", "financialManagerHomeScreen") --g_keyboardSteerMogliScreen
-    end
-    print("END Function fmShowHomeScreen")
+
 end
+
 
 function fmMain:draw()
 end
