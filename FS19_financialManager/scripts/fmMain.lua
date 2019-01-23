@@ -48,9 +48,9 @@ local g_currentModDirectory = g_currentModDirectory
 function fmMain:fmShowHomeScreen()
     print("START Function fmShowHomeScreen")
 
-    
+
     print(guiName)
-    g_gui:loadGui(g_currentModDirectory.."emptyGui.xml", guiName)
+    g_gui:loadGui(g_currentModDirectory.."emptyGui.xml", "fmMain", guiName)
 
     print(g_currentModDirectory)
 
