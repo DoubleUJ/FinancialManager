@@ -42,12 +42,17 @@ function fmMain:update()
     end
 end
 
+local guiName = g_currentModName.."_emptyGui"
+local g_currentModDirectory = g_currentModDirectory
+
 function fmMain:fmShowHomeScreen()
     print("START Function fmShowHomeScreen")
 
-    local guiName = g_currentModName.."_emptyGui"
+    
     print(guiName)
     g_gui:loadGui(g_currentModDirectory.."emptyGui.xml", guiName)
+
+    print g_currentModDirectory
 
 end
 
