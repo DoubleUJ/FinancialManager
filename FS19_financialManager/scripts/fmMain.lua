@@ -45,6 +45,9 @@ end
 function fmMain:fmShowHomeScreen()
     print("START Function fmShowHomeScreen")
 
+    local guiName = g_currentModName.."_emptyGui";
+    g_gui:loadGui(g_currentModDirectory.."emptyGui.xml", guiName);
+    
 end
 
 
