@@ -52,7 +52,7 @@ function fmMain:fmShowHomeScreen()
     print(guiName)
     g_gui:loadGui(g_currentModDirectory.."emptyGui.xml", guiName)
 
-    print g_currentModDirectory
+    print(g_currentModDirectory)
 
 end
 
