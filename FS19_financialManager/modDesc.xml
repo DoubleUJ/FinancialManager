@@ -38,6 +38,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 	</inputBinding>
 	
 	<extraSourceFiles>
+		<sourceFile filename="fmGUI.lua" />
 		<sourceFile filename="scripts/fmMain.lua" />
 	</extraSourceFiles>
   
