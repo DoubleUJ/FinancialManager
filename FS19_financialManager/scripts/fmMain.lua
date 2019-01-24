@@ -14,15 +14,10 @@ source(Utils.getFilename("fmGUI.lua", g_currentModDirectory))
 function fmMain:delete()
 end
 
-function fmMain:loadMap(loadmapname)
+function fmMain:loadMap(name)
     
     -- Set inputactive false    
     self.inputsActive = false
-    
-    -- Set Gui
-    fmMain.gui = {};
-    fmMain.gui["fmSettingGui"] = fmGui:new();
-	g_gui:loadGui(FinancialManager .. "emptyGui.xml", "fmGui");
 end
 
 function fmMain:deleteMap()
@@ -68,6 +63,10 @@ end
 
 function fmMain:draw()
     print("Financialmanager - draw")
+    -- Set Gui
+    fmMain.gui = {};
+    fmMain.gui["fmSettingGui"] = fmGui:new();
+    g_gui:loadGui(FinancialManager .. "emptyGui.xml", "fmGui", fmMain.gui.fmSettingsGui);
 end
 
 print("  Loaded Financial Manager by MaxAgriSim   ")
