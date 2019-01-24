@@ -9,13 +9,12 @@ fmMain = {}
 local guiName = g_currentModName.."_emptyGui"
 local FinancialManager = g_currentModDirectory
 
-source(Utils.getFilename("fmGUI.lua", g_currentModDirectory))
+source(Utils.getFilename("fmGui.lua", g_currentModDirectory))
 
 function fmMain:delete()
 end
 
 function fmMain:loadMap(name)
-    
     -- Set inputactive false    
     self.inputsActive = false
 end
@@ -59,14 +58,12 @@ function fmMain:fmShowHomeScreen()
 
     -- Set Gui
     fmMain["fmSettingGui"] = fmGui:new();
-    print(fmMain["fsSettingGui"])
     g_gui:loadGui(FinancialManager.."fmGui.xml", "fmGui", fmMain.fmSettingsGui);
     g_gui:showGui("fmGui")
 end
 
 
 function fmMain:draw()
-    --print("Financialmanager - draw")
 end
 
 print("  Loaded Financial Manager by MaxAgriSim   ")
