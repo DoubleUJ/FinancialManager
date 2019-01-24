@@ -6,6 +6,10 @@
 -- 0.0.0.1      First implementation 
 
 fmMain = {}
+local guiName = g_currentModName.."_emptyGui"
+local FinancialManager = g_currentModDirectory
+
+source(Utils.getFilename("emptyGui.lua", g_currentModDirectory))
 
 function fmMain:loadMap(...)
     -- global variables 
@@ -42,22 +46,15 @@ function fmMain:update()
     end
 end
 
-local guiName = g_currentModName.."_emptyGui"
-local g_currentModDirectory = g_currentModDirectory
 
 function fmMain:fmShowHomeScreen()
-    print("START Function fmShowHomeScreen")
-
-
-    print(guiName)
-    g_gui:loadGui(g_currentModDirectory.."emptyGui.xml", "fmMain", guiName)
-
-    print(g_currentModDirectory)
-
 end
 
 
 function fmMain:draw()
+
+    g_gui:loadGui(g_currentModDirectory.."emptyGui.xml", "fmMain", guiName)
+
 end
 
 print("  Loaded Financial Manager by MaxAgriSim   ")
