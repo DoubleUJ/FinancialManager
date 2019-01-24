@@ -14,3 +14,23 @@ function fmGui:new(target, custom_mt)
     self.returnScreenName = ""
     return self
 end;
+
+function fmGui:onOpen()
+    fmGui:superClass().onOpen(self);
+	FocusManager:setFocus(self.backButton);
+end;
+
+function fmGui:onClose()
+    fmGui:superClass().onClose(self);
+end;
+
+function fmGui:onClickBack()
+    fmGui:superClass().onClickBack(self);
+	StoryMode:guiClosed();
+end;
+
+function fmGui:onClickOk()
+    fmGui:superClass().onClickOk(self);
+	StoryMode:settingsFromGui();
+    self:onClickBack();
+end;
