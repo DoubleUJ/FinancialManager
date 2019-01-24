@@ -35,12 +35,17 @@ function fmMain:keyEvent(...)
 end
 
 function fmMain:activateScreen()
+    print("Financialmanager - ActivateScreen");
     print("I'm activated Financial Manager by pressing a key!")
 	fmMain.fmShowHomeScreen(self)
 end
 
-function fmMain:update()  
-    
+function fmMain:update(dt)  
+    i = 1
+    for i = 2, 1, -1 then 
+        print("Financialmanager - Update");
+    end 
+
     if g_gui.currentGui == nil and g_currentMission.controlledVehicle == nil then -- only if no vehicle is entered or menu is up
         if not self.inputsActive then -- register input events    
             _, self.eventIdActive = g_inputBinding:registerActionEvent(InputAction.fmHomeScreen, fmMain, fmMain.activateScreen, false, true, false, false)
@@ -56,11 +61,13 @@ end
 
 
 function fmMain:fmShowHomeScreen()
+    print("Financialmanager - fmShowHomeScreen")
+    g_gui:showGui("fmGui")
 end
 
 
 function fmMain:draw()
-    g_gui:showGui("fmGui")
+    print("Financialmanager - draw")
 end
 
 print("  Loaded Financial Manager by MaxAgriSim   ")
