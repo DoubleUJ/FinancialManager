@@ -42,7 +42,7 @@ end
 
 function fmMain:update(dt)  
     i = 1
-    for i = 2, 1, -1 then 
+    for i = 2, 1, -1 do 
         print("Financialmanager - Update");
     end 
 
