@@ -11,10 +11,18 @@ local FinancialManager = g_currentModDirectory
 
 source(Utils.getFilename("emptyGui.lua", g_currentModDirectory))
 
-function fmMain:loadMap(...)
-    -- global variables 
-    self.eventIdActive = ""
-	self.inputsActive = false
+function fmMain:delete()
+end
+
+function fmMain:loadMap(loadmapname)
+    
+    -- Set inputactive false    
+    self.inputsActive = false
+    
+    -- Set Gui
+    StoryMode.gui = {};
+    StoryMode.gui["fmSettingGui"] = fmGui:new();
+	g_gui:loadGui(StoryMode.directory .. "emptyGui.xml", "fmGui");
 end
 
 function fmMain:deleteMap()
@@ -52,9 +60,7 @@ end
 
 
 function fmMain:draw()
-
-    g_gui:loadGui(g_currentModDirectory.."emptyGui.xml", "fmMain", guiName)
-
+    g_gui:showGui("fmGui")
 end
 
 print("  Loaded Financial Manager by MaxAgriSim   ")
