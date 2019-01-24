@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <GUI>
-	<!-- bottom "back" + "ok"  -->
-	<GuiElement type="flowLayout" profile="buttonBoxDocked" screenAlign="bottomLeft" positionOrigin="bottomLeft" position="130px 77px" id="buttonsPC">
-		<GuiElement type="button" profile="buttonOK" text="$l10n_button_ok" onClick="onClickOk" />	
-	</GuiElement>	
+<GuiElement/>
 </GUI>
