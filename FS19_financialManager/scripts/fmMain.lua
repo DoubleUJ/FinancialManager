@@ -9,7 +9,7 @@ fmMain = {}
 local guiName = g_currentModName.."_emptyGui"
 local FinancialManager = g_currentModDirectory
 
-source(Utils.getFilename("emptyGui.lua", g_currentModDirectory))
+source(Utils.getFilename("fmGUI.lua", g_currentModDirectory))
 
 function fmMain:delete()
 end
@@ -20,9 +20,9 @@ function fmMain:loadMap(loadmapname)
     self.inputsActive = false
     
     -- Set Gui
-    StoryMode.gui = {};
-    StoryMode.gui["fmSettingGui"] = fmGui:new();
-	g_gui:loadGui(StoryMode.directory .. "emptyGui.xml", "fmGui");
+    fmMain.gui = {};
+    fmMain.gui["fmSettingGui"] = fmGui:new();
+	g_gui:loadGui(FinancialManager .. "emptyGui.xml", "fmGui");
 end
 
 function fmMain:deleteMap()
