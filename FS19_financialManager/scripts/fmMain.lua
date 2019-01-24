@@ -35,12 +35,9 @@ function fmMain:activateScreen()
 	fmMain.fmShowHomeScreen(self)
 end
 
-function fmMain:update(dt)  
-    i = 1
-    for i = 2, 1, -1 do 
-        print("Financialmanager - Update");
-    end 
 
+function fmMain:update(dt)  
+    
     if g_gui.currentGui == nil and g_currentMission.controlledVehicle == nil then -- only if no vehicle is entered or menu is up
         if not self.inputsActive then -- register input events    
             _, self.eventIdActive = g_inputBinding:registerActionEvent(InputAction.fmHomeScreen, fmMain, fmMain.activateScreen, false, true, false, false)
@@ -54,19 +51,21 @@ function fmMain:update(dt)
     end
 end
 
+function fmMain:load(xmlFile)	
+end;
 
 function fmMain:fmShowHomeScreen()
     print("Financialmanager - fmShowHomeScreen")
     g_gui:showGui("fmGui")
+    -- Set Gui
+    fmMain.gui = {};
+    fmMain.gui["fmSettingGui"] = fmGui:new();
+    g_gui:loadGui(FinancialManager .. "fmGui.xml", "fmGui", fmMain.gui.fmSettingsGui);
 end
 
 
 function fmMain:draw()
-    print("Financialmanager - draw")
-    -- Set Gui
-    fmMain.gui = {};
-    fmMain.gui["fmSettingGui"] = fmGui:new();
-    g_gui:loadGui(FinancialManager .. "emptyGui.xml", "fmGui", fmMain.gui.fmSettingsGui);
+    --print("Financialmanager - draw")
 end
 
 print("  Loaded Financial Manager by MaxAgriSim   ")
