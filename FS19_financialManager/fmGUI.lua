@@ -40,5 +40,5 @@ end;
 
 function fmGui:onCreatefmGuiHeader(element)    
     fmGui.header = element;
-	element.text = g_i18n:getText('fmHomeScreenTitle');
+	element.text = g_i18n:getText('fm_Home_Screen_Title');
 end;
