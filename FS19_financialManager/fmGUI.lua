@@ -35,10 +35,10 @@ function fmGui:onClickOk()
     self:onClickBack();
 end;
 
-function smGui:onIngameMenuHelpTextChanged(element)
+function fmGui:onIngameMenuHelpTextChanged(element)
 end;
 
-function smGui:onCreatesmGuiHeader(element)    
+function fmGui:onCreatefmGuiHeader(element)    
     fmGui.header = element;
 	element.text = g_i18n:getText('fmHomeScreen');
 end;
