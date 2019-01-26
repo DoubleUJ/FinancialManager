@@ -7,7 +7,7 @@
 	<!-- Header  -->
 	<GuiElement type="empty" profile="ingameMenuFrameHeaderPanel" position="130px -130px">
 		<GuiElement type="bitmap" profile="ingameMenuGeneralSettingsHeaderIcon" position="0px 0px"/>
-		<GuiElement type="text" profile="ingameMenuFrameHeaderText" position="80px 0px" onCreate="onCreatesmGuiHeader" text="$l10n_gui_sm_Setting" />
+		<GuiElement type="text" profile="ingameMenuFrameHeaderText" position="80px 0px" onCreate="onCreatesmGuiHeader" text="$l10n_fmHomeScreen" />
 	</GuiElement>	
 	
 	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -200px">		
