@@ -57,8 +57,8 @@ function fmMain:fmShowHomeScreen()
     print("Financialmanager - fmShowHomeScreen")
 
     -- Set Gui
-    fmMain["fmSettingGui"] = fmGui:new();
-    g_gui:loadGui(FinancialManager.."fmGui.xml", "fmGui", fmMain.fmSettingsGui);
+    local fmMain["fmSettingGui"] = fmGui:new();
+    g_gui:loadGui(FinancialManager.."fmGui.xml", "fmGui", fmMain.fmSettingsGui, true);
     g_gui:showGui("fmGui")
 end
 
