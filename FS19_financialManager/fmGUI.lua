@@ -26,11 +26,19 @@ end;
 
 function fmGui:onClickBack()
     fmGui:superClass().onClickBack(self);
-	StoryMode:guiClosed();
+	fmMain:guiClosed();
 end;
 
 function fmGui:onClickOk()
     fmGui:superClass().onClickOk(self);
-	StoryMode:settingsFromGui();
+	--StoryMode:settingsFromGui();
     self:onClickBack();
+end;
+
+function smGui:onIngameMenuHelpTextChanged(element)
+end;
+
+function smGui:onCreatesmGuiHeader(element)    
+    fmGui.header = element;
+	element.text = g_i18n:getText('fmHomeScreen');
 end;
