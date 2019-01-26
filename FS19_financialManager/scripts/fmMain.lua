@@ -57,11 +57,13 @@ function fmMain:fmShowHomeScreen()
     print("Financialmanager - fmShowHomeScreen")
 
     -- Set Gui
-    fmMain = fmGui:new()
-    g_gui:loadGui(FinancialManager.."fmGui.xml", "fmGui", fmMain, true)
+    local fmMain = fmGui:new()
+    g_gui:loadGui(FinancialManager.."fmGui.xml", "fmGui", fmMain, false)
     g_gui:showGui("fmGui")
 end
 
+function fmMain:guiClosed()
+end;
 
 function fmMain:draw()
 end
