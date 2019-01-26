@@ -3,6 +3,8 @@
 	<!-- Note that 'description' is only here for easier translations. It needs to be manually copied to ModDesc.XML later. -->
 	<description><![CDATA[Voegt specialisatie toe financiële manager]]></description>
 
+	<text name="fmHomeScreenTitle"> <nl>Financiële Manager</nl> </text>
+	
 	<texts>
 		<text name="fmHomeScreenTitle"> <nl>Financiële Manager</nl> </text>
 				                               
