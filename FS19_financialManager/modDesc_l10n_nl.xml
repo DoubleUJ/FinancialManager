@@ -5,7 +5,7 @@
 
 	<texts>
 		<text name="fm_Home_Screen_Title"> 	<nl>Financiële Manager</nl>   			</text>
-		<text name="input_fmHomeScreen">  	<nl>Financial Manager: Activeren</nl> 	</text>
+		<!--text name="input_fmHomeScreen">  	<nl>Financial Manager: Activeren</nl> 	</text-->
 	</texts>
 	
 	<longTexts>
