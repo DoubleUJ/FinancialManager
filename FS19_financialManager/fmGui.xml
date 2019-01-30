@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
-	<GuiElement type="bitmap" profile="uiFullInGameBackground" />
-	<GuiElement name="background" type="bitmap" position="1450px 500px" size="231px 231px"  imageFilename="shared/splash.dds" MOD_imageDir="img/" MOD_imageFilename="mayorTom.dds" imageColor="1 1 1 1" />
+	<!--GuiElement type="bitmap" profile="uiFullInGameBackground" /-->
+	<!--GuiElement name="background" type="bitmap" position="1450px 500px" size="231px 231px"  imageFilename="shared/splash.dds" MOD_imageDir="img/" MOD_imageFilename="mayorTom.dds" imageColor="1 1 1 1" /-->
 	<!-- screenAlign="middleCenter" positionOrigin="middleCenter" -->
 
 	<!-- Header  -->
