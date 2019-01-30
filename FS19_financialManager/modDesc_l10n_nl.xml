@@ -4,9 +4,10 @@
 	<description><![CDATA[Voegt specialisatie toe financiële manager]]></description>
 
 	<texts>
-		<text name="fmHomeScreen"        	text="Financiële Manager"/>
+		<text name="fmHomeScreen"         text="Financiële Manager"/>
+		<text name="fmHomeScreenTitle"    text="Financiële Manager"/>
 				                               
-		<text name="input_fmHomeScreen"  	text="Financial Manager: Activeren"/>
+		<text name="input_fmHomeScreen"   text="Financial Manager: Activeren"/>
 	</texts>
 	
 	<longTexts>

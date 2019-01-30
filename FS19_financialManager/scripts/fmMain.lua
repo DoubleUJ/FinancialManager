@@ -9,7 +9,7 @@ fmMain = {}
 local guiName = g_currentModName.."_emptyGui"
 local FinancialManager = g_currentModDirectory
 
-source(Utils.getFilename("fmGui.lua", g_currentModDirectory))
+source(Utils.getFilename("fmGUI.lua", g_currentModDirectory))
 
 function fmMain:delete()
 end
