@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
-	<!--GuiElement type="bitmap" profile="uiFullInGameBackground" /-->
-	<!--GuiElement name="background" type="bitmap" position="1450px 500px" size="231px 231px"  imageFilename="shared/splash.dds" MOD_imageDir="img/" MOD_imageFilename="mayorTom.dds" imageColor="1 1 1 1" /-->
+	<GuiElement type="bitmap" profile="uiFullInGameBackground" />
+	<GuiElement name="background" type="bitmap" position="1450px 500px" size="231px 231px" MOD_imageDir="images/" MOD_imageFilename="fmIcon.dds"/>
 	<!-- screenAlign="middleCenter" positionOrigin="middleCenter" -->
 
 	<!-- Header  -->
 	<GuiElement type="empty" profile="ingameMenuFrameHeaderPanel" position="130px -130px">
 		<GuiElement type="bitmap" profile="ingameMenuGeneralSettingsHeaderIcon" position="0px 0px"/>
-		<!-- <GuiElement type="bitmap" profile="ingameMenuHeaderIcon" position="0px 0px" MOD_imageFilename="fmIcon.dds" /> -->
 		<GuiElement type="text" profile="ingameMenuFrameHeaderText" position="80px 0px" onCreate="onCreatefmGuiHeader" text="$l10n_fmHomeScreenTitle"/>
 	</GuiElement>	
 	
 	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -200px">		
 		<GuiElement type="text" profile="ingameMenuHelpRowText" id="TextField" text="Hallo dit is een test" onCreate="onCreatesmTextField" position="50px 100px" size="512px 512px" />
-	    <GuiElement type="bitmap" position="50px 50px" MOD_imageDir="images/" MOD_imageFilename="fmIcon.dds" />
 	</GuiElement>
 
 		<!-- bottom "back" + "ok"  -->
