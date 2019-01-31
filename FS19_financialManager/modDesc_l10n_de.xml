@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<!-- Note that 'description' is only here for easier translations. It needs to be manually copied to ModDesc.XML later. -->
+	<description><![CDATA[Fügt Spezialisierungs Finanzmanager hinzu]]></description>
+
+	<texts>
+		<text name="fmHomeScreen"         text="Finanzmanager"/>
+		<text name="fmHomeScreenTitle"    text="Finanzmanager"/>
+				                               
+		<text name="input_fmHomeScreen"   text="Finanzmanager: Aktivieren"/>
+	</texts>
+	
+	<longTexts>
+		<longText name="fm_Help_1">
+<![CDATA[
+Nog in te vullen.]]>
+		</longText>
+	</longTexts>
+</l10n>
