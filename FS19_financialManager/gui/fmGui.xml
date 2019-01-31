@@ -11,9 +11,16 @@
 	</GuiElement>
 
 	<!-- Body -->
-	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -150px">		
-		<!-- <GuiElement type="text" profile="ingameMenuHelpRowText" id="TextField" onCreate="onCreateonCreatefmGuiInvoice" position="50px 100px" size="512px 512px" /> -->
-		<GuiElement type="text" profile="multiTextOptionTitle" id="TextField" onCreate="onCreatefmGuiInvoice" text="$l10n_fmHomeScreenInvoice" />
+	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -200px">	
+		<GuiElement type="text" profile="multiTextOptionHeader" id="TextField" onCreate="onCreatefmGuiInvoice" text="$l10n_fmHomeScreenInvoice" position="20px 660px" />
+		<!-- <GuiElement type="text" profile="multiTextOptionTitle" id="TextField" onCreate="onCreatefmGuiInvoice" text="$l10n_fmHomeScreenInvoice" position="20px -80px" /> -->
+		<GuiElement type="checkedOption" profile="multiTextOptionSettings" position="20px 560px">
+			<GuiElement type="button" profile="multiTextOptionLeft" />
+			<GuiElement type="button" profile="multiTextOptionRight"/>
+			<GuiElement type="text" profile="multiTextOptionText" />
+			<GuiElement type="text" profile="multiTextOptionTitle" text="BTW"/>
+			<GuiElement type="bitmap" profile="multiTextOptionBg" />
+		</GuiElement>
 	</GuiElement>
 
 	<!-- Bottom with button "ok"  -->

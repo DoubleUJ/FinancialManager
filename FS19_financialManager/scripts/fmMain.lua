@@ -63,7 +63,7 @@ function fmMain:load(xmlFile)
 end;
 
 function fmMain:fmShowHomeScreen()
-    print("Financialmanager - fmShowHomeScreen")
+    -- print("Debug: Financialmanager - fmShowHomeScreen")
 
     -- Set Gui
     local fmMain = fmGui:new()
