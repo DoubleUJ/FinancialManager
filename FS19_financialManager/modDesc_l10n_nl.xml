@@ -6,6 +6,7 @@
 	<texts>
 		<text name="fmHomeScreen"         text="Financieel Manager"/>
 		<text name="fmHomeScreenTitle"    text="Financieel Manager"/>
+		<text name="fmHomeScreenInvoice"  text="Factuur"/>
 				                               
 		<text name="input_fmHomeScreen"   text="Financieel Manager: Activeren"/>
 	</texts>

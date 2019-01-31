@@ -8,13 +8,15 @@
 	<GuiElement type="empty" profile="ingameMenuFrameHeaderPanel" position="130px -130px">
 		<GuiElement type="bitmap" profile="ingameMenuGeneralSettingsHeaderIcon" position="0px 0px"/>
 		<GuiElement type="text" profile="ingameMenuFrameHeaderText" position="80px 0px" onCreate="onCreatefmGuiHeader" text="$l10n_fmHomeScreenTitle"/>
-	</GuiElement>	
-	
-	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -200px">		
-		<GuiElement type="text" profile="ingameMenuHelpRowText" id="TextField" text="Hallo dit is een test" onCreate="onCreatesmTextField" position="50px 100px" size="512px 512px" />
 	</GuiElement>
 
-		<!-- bottom "back" + "ok"  -->
+	<!-- Body -->	
+	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -200px">		
+		<!-- <GuiElement type="text" profile="ingameMenuHelpRowText" id="TextField" onCreate="onCreateonCreatefmGuiInvoice" position="50px 100px" size="512px 512px" /> -->
+		<GuiElement type="text" profile="ingameMenuHelpRowText" id="TextField" onCreate="onCreatefmGuiInvoice" text="$l10n_fmHomeScreenInvoice" />
+	</GuiElement>
+
+	<!-- Bottom with button "ok"  -->
 	<GuiElement type="flowLayout" profile="buttonBoxDocked" screenAlign="bottomLeft" positionOrigin="bottomLeft" position="130px 77px" id="buttonsPC">
 		<GuiElement type="button" profile="buttonOK" text="$l10n_button_ok" onClick="onClickOk" />	
 	</GuiElement>	

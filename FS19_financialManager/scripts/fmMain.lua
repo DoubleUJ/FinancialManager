@@ -6,11 +6,18 @@
 -- 0.0.0.1      First implementation        DoubleU.J. / Pinqdev 
 
 fmMain = {}
--- local guiName = g_currentModName.."_emptyGui"
--- local FinancialManager = g_currentModDirectory
-fmMain.directory = g_currentModDirectory
 
-source(Utils.getFilename("scripts/fmGUI.lua", g_currentModDirectory))
+-- Setting directories global
+fmMain.directory = g_currentModDirectory
+fmMain.scripts = g_currentModDirectory .. "scripts/"
+fmMain.gui = g_currentModDirectory .. 'gui/'
+fmMain.images = g_currentModDirectory .. 'images/'
+fmMain.data = g_currentModDirectory .. 'data/'
+
+-- Setting directories local
+local fmMainDirectory = g_currentModDirectory
+
+source(Utils.getFilename("fmGUI.lua", fmMain.scripts))
 
 function fmMain:delete()
 end
@@ -59,7 +66,7 @@ function fmMain:fmShowHomeScreen()
 
     -- Set Gui
     local fmMain = fmGui:new()
-    g_gui:loadGui(fmMain.directory .. "fmGui.xml", "fmGui", fmMain, false)
+    g_gui:loadGui(fmMainDirectory .. "fmGui.xml", "fmGui", fmMain, false)
     g_gui:showGui("fmGui")
 end
 

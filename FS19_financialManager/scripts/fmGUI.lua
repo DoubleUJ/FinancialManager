@@ -43,3 +43,8 @@ function fmGui:onCreatefmGuiHeader(element)
     fmGui.header = element;
 	element.text = g_i18n:getText('fmHomeScreenTitle');
 end;
+
+function fmGui:onCreatefmGuiInvoice(element)
+    fmGui.header = element
+    element.text = g_i18n:getText('fmHomeScreenInvoice')
+end
