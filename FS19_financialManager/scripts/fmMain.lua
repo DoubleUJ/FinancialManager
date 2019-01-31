@@ -16,6 +16,7 @@ fmMain.data = g_currentModDirectory .. 'data/'
 
 -- Setting directories local
 local fmMainDirectory = g_currentModDirectory
+local fmMainGui = g_currentModDirectory .. 'gui/'
 
 source(Utils.getFilename("fmGUI.lua", fmMain.scripts))
 
@@ -37,8 +38,8 @@ function fmMain:keyEvent(...)
 end
 
 function fmMain:activateScreen()
-    print("Financialmanager - ActivateScreen");
-    print("I'm activated Financial Manager by pressing a key!")
+    -- print("Debug: Financialmanager - ActivateScreen");
+    -- print("Debug: I'm activated Financial Manager by pressing a key!")
 	fmMain.fmShowHomeScreen(self)
 end
 
@@ -66,7 +67,7 @@ function fmMain:fmShowHomeScreen()
 
     -- Set Gui
     local fmMain = fmGui:new()
-    g_gui:loadGui(fmMainDirectory .. "fmGui.xml", "fmGui", fmMain, false)
+    g_gui:loadGui(fmMainGui .. "fmGui.xml", "fmGui", fmMain, false)
     g_gui:showGui("fmGui")
 end
 
@@ -76,5 +77,5 @@ end;
 function fmMain:draw()
 end
 
-print("  Loaded Financial Manager by MaxAgriSim   ")
+print("  Loaded Financial Manager by Max-Agrisim   ")
 addModEventListener(fmMain)

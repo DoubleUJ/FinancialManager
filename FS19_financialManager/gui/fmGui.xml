@@ -10,10 +10,10 @@
 		<GuiElement type="text" profile="ingameMenuFrameHeaderText" position="80px 0px" onCreate="onCreatefmGuiHeader" text="$l10n_fmHomeScreenTitle"/>
 	</GuiElement>
 
-	<!-- Body -->	
-	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -200px">		
+	<!-- Body -->
+	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -150px">		
 		<!-- <GuiElement type="text" profile="ingameMenuHelpRowText" id="TextField" onCreate="onCreateonCreatefmGuiInvoice" position="50px 100px" size="512px 512px" /> -->
-		<GuiElement type="text" profile="ingameMenuHelpRowText" id="TextField" onCreate="onCreatefmGuiInvoice" text="$l10n_fmHomeScreenInvoice" />
+		<GuiElement type="text" profile="multiTextOptionTitle" id="TextField" onCreate="onCreatefmGuiInvoice" text="$l10n_fmHomeScreenInvoice" />
 	</GuiElement>
 
 	<!-- Bottom with button "ok"  -->
