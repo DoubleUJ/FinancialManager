@@ -46,7 +46,7 @@ end
 
 function fmMain:update(dt)  
     
-    if g_gui.currentGui == nil and g_currentMission.controlledVehicle == nil then -- only if no vehicle is entered or menu is up
+    if g_gui.currentGui == nil and g_currentMission.controlledVehicle == nil then -- No vehicle is entered or menu is up
         if not self.inputsActive then -- register input events    
             _, self.eventIdActive = g_inputBinding:registerActionEvent(InputAction.fmHomeScreen, fmMain, fmMain.activateScreen, false, true, false, false)
             self.inputsActive = true
