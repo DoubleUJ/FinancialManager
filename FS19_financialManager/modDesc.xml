@@ -19,7 +19,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 ]]></nl>
 	</description>
 	<multiplayer supported="false"/>   
-	<iconFilename>images/fmStoreIcon.dds</iconFilename>
+	<iconFilename>source/images/fmStoreIcon.dds</iconFilename>
 	<version>0.0.0.1</version>
 	<l10n filenamePrefix="modDesc_l10n">
 		<text name="fmVersion">
@@ -38,7 +38,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 	</inputBinding>
 	
 	<extraSourceFiles>
-		<sourceFile filename="scripts/fmMain.lua" />
+		<sourceFile filename="source/scripts/loader.lua" />
 	</extraSourceFiles>
   
 </modDesc>
