@@ -38,6 +38,9 @@ function fmMain:fmShowHomeScreen()
 
 end
 
+function GuidanceSteering:update()
+end
+
 function fmMain:draw()
 end
 
