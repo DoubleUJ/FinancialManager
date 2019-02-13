@@ -27,7 +27,7 @@ function fmHud:toggle(vis)
 end
 
 function fmHud.speedMeterDisplay_draw(speedMeterDisplay)
-    g_guidanceSteering.ui.hud:drawText()
+
 end
 
 function fmHud:setWidthText(width)
