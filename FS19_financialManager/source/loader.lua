@@ -11,6 +11,6 @@
 local directory = g_currentModDirectory
 local modName = g_currentModName
 
-source(Utils.getFilename("source/gui/fmGUI.lua", directory))
+source(Utils.getFilename("source/gui/frames/fmMainScreen.lua", directory))
 
-source(Utils.getFilename("source/fmMain.lua", directory))
+source(Utils.getFilename("source/gui/fmMain.lua", directory))

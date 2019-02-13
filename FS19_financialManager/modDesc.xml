@@ -19,9 +19,9 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 ]]></nl>
 	</description>
 	<multiplayer supported="false"/>   
-	<iconFilename>source/images/fmStoreIcon.dds</iconFilename>
+	<iconFilename>fmStoreIcon.dds</iconFilename>
 	<version>0.0.0.1</version>
-	<l10n filenamePrefix="modDesc_l10n">
+	<l10n filenamePrefix="translations/modDesc_l10n">
 		<text name="fmVersion">
 			<en>FinancialManager 0.0.0.1</en>
 			<nl>FinancialManager 0.0.0.1</nl>	
@@ -29,8 +29,9 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 	</l10n>
 	
 	<actions>
-		<action name="fmHomeScreen"/>
+		<action name="fmHomeScreen" axisType="HALF"/>
 	</actions>
+
 	<inputBinding>
 		<actionBinding action="fmHomeScreen">	
 			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_f" axisComponent="+" inputComponent="+" index="1"/>
@@ -38,7 +39,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 	</inputBinding>
 	
 	<extraSourceFiles>
-		<sourceFile filename="source/scripts/loader.lua" />
+		<sourceFile filename="source/loader.lua" />
 	</extraSourceFiles>
   
 </modDesc>
