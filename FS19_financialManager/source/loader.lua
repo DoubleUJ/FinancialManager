@@ -14,4 +14,4 @@ local modName = g_currentModName
 source(Utils.getFilename("src/gui/fmMain.lua", directory))
 source(Utils.getFilename("src/gui/fmMenu.lua", directory))
 source(Utils.getFilename("source/gui/frames/fmMainScreen.lua", directory))
-source(Utils.getFilename("src/gui/hud/GuidanceSteeringHUD.lua", directory))
+source(Utils.getFilename("src/gui/hud/fmHud.lua", directory))
