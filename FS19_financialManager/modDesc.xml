@@ -34,7 +34,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 
 	<inputBinding>
 		<actionBinding action="fmHomeScreen">	
-			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_f" axisComponent="+" inputComponent="+" index="1"/>
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_f"/>
 		</actionBinding>	
 	</inputBinding>
 	
