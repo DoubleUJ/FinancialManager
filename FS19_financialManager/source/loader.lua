@@ -16,14 +16,12 @@ source(Utils.getFilename("source/gui/fmMenu.lua", directory)) -- == gsMenu
 source(Utils.getFilename("source/gui/frames/fmMainScreen.lua", directory)) -- == gsSettingsframe
 source(Utils.getFilename("source/gui/hud/fmHud.lua", directory)) -- == gsHud
 
-source(Utils.getFilename("source/FinancialManager.lua", directory))
+source(Utils.getFilename("source/FinancialManager.lua", directory)) -- == gs
 
-
-
-local fmMenu
+local FinancialManager
 
 local function isEnabled()
-    return fmMenu ~= nil
+    return FinancialManager ~= nil
 end
 
 function unload()
