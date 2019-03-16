@@ -9,7 +9,7 @@ fmHud = {}
 
 local fmHud_mt = Class(fmHud)
 
-function fmHud:new(gameInfoDisplay, i18n)
+function fmHud:new(gui, gameInfoDisplay, i18n)
     local instance = setmetatable({}, fmHud_mt)
 
     instance.gameInfoDisplay = gameInfoDisplay

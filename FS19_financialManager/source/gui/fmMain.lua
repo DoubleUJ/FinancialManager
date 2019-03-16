@@ -7,13 +7,14 @@
 
 fmMain = {}
 
-local FinancialManager_mt = Class(fmMain)
+local FinancialManagerGui_mt = Class(fmMain)
 
 -- Setting directories global
 
-function fmMain:new(i18n, modDirectory, gui, inputManager, messageCenter, settingsModel)
-	local self = setmetatable({}, FinancialManager_mt)
+function fmMain:new(fmGui, i18n, modDirectory, gui, inputManager, messageCenter, settingsModel)
+	local self = setmetatable({}, FinancialManagerGui_mt)
 
+	self.fmGui = fmGui
 	self.i18n = i18n
 	self.modDirectory = modDirectory
 	self.gui = gui
@@ -39,18 +40,20 @@ end
 end
 
 function fmMain:loadMenu()
-	--fmMain.fmShowHomeScreen(self)
-	local fmMainScreenobject = fmMainScreen:new(self.i18n, self.inputManager)
+	local fmMainScreenobject = fmMainScreen:new(self.i18n, self.settingsModel)
 	
-	self.menu = fmMenu:new(self.i18n, self.inputManager)
+	self.menu = fmMenu:new(self.messageCenter, self.i18n, self.inputManager)
 
 	local root = Utils.getFilename("resources/gui/", self.modDirectory)
-	self.gui:LoadGui(root .. "fmMainScreen.xml", "fmMainScreen", fmMainScreenobject, true)
+	self.gui:LoadGui(root .. "fmMainScreen.xml", "fmMainScreen", "fmMainScreenobject" , true)
 	self.gui:LoadGui(root .. "fmMenu.xml", "fmMenu", self.menu)
 end
 
 function fmMain:unloadMenu()
-	self.menu:delete()
+    self.gui:unloadGui("fmMainScreenobject")
+	self.gui:unloadGui("fmMenu")
+	
+	--self.menu:delete()
 end
 
 function fmMain:onToggleUI() 

@@ -33,6 +33,16 @@ function unload()
 
     --guidanceSteering:delete()
     --guidanceSteering = nil -- Allows garbage collecting
-    --getfenv(0)["g_guidanceSteering"] = nil
+    --getfenv(0)["g_FinancialManager"] = nil
 end
 
+
+function loadOverlay(gui)
+    assert(g_FinancialManager == nil)
+
+    guidanceSteering = GuidanceSteering:new(gui, directory, modName, g_i18n, g_gui, g_gui.inputManager, g_messageCenter, g_settingsScreen.settingsModel)
+
+    getfenv(0)["g_FinancialManager"] = FinancialManager
+
+    addModEventListener(FinancialManager)
+end

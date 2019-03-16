@@ -43,7 +43,6 @@ function fmMenu:setupPages()
     local orderedPages = {
         -- default pages, their enabling state predicate functions and tab icon UVs in order
         { self.pageSettings, predicate, fmMenu.TAB_UV.SETTINGS },
-        { self.pageStrategy, predicate, fmMenu.TAB_UV.STRATEGY },
     }
 
     for i, pageDef in ipairs(orderedPages) do
