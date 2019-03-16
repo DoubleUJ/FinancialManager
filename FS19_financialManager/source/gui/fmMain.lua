@@ -35,7 +35,7 @@ function fmMain:loadMenu()
 	self.menu = fmMenu:new(self.i18n, self.inputManager)
 
 	local root = Utils.getFilename("resources/gui/", self.modDirectory)
-	self.gui:LoadGui(root .. "fmGui.xml", "fmMainScreen", fmMainScreen, true)
+	self.gui:LoadGui(root .. "fmMainScreen.xml", "fmMainScreen", fmMainScreen, true)
 	self.gui:LoadGui(root .. "fmMenu.xml", "fmMenu", self.menu)
 end
 
