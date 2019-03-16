@@ -32,7 +32,7 @@ end
 function FinancialManager:delete()
     self.ui:delete()
 end
-[[
+--[[
 function FinancialManager:onMissionLoadFromSavegame(xmlFile)
     local i = 0
     while true do
@@ -125,7 +125,7 @@ end
 
 function FinancialManager:draw(dt)
 end
-[[
+--[[
 function FinancialManager:createTrack(id, name)
     Logger.info("Creating track: ", name)
 
@@ -197,7 +197,7 @@ function FinancialManager:getTrackNameExist(name)
     return false
 end
 ]]
-[[
+--[[
 function GuidanceSteering.installSpecializations(vehicleTypeManager, specializationManager, modDirectory, modName)
     specializationManager:addSpecialization("globalPositioningSystem", "GlobalPositioningSystem", Utils.getFilename("src/vehicles/GlobalPositioningSystem.lua", modDirectory), nil) -- Nil is important here
 
