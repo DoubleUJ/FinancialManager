@@ -26,7 +26,6 @@ function fmMenu:onGuiSetupFinished()
     self.clickBackCallback = self:makeSelfCallback(self.onButtonBack) -- store to be able to apply it always when assigning menu button info
 
     self.pageSettings:initialize()
-    self.pageStrategy:initialize()
 
     self:setupPages()
 end
@@ -80,7 +79,6 @@ end
 --- Page tab UV coordinates for display elements.
 fmMenu.TAB_UV = {
     SETTINGS = { 0, 209, 65, 65 },
-    STRATEGY = { 65, 209, 65, 65 },
 }
 
 fmMenu.L10N_SYMBOL = {
