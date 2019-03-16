@@ -7,12 +7,12 @@
 
 fmMain = {}
 
-local financialManager_mt = Class(fmMain)
+local FinancialManager_mt = Class(fmMain)
 
 -- Setting directories global
 
 function fmMain:new(i18n, modDirectory, gui, inputManager, messageCenter, settingsModel)
-	local self = setmetatable({}, financialManager_mt)
+	local self = setmetatable({}, FinancialManager_mt)
 
 	self.i18n = i18n
 	self.modDirectory = modDirectory
