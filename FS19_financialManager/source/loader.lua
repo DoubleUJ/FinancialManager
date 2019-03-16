@@ -15,3 +15,22 @@ source(Utils.getFilename("source/gui/fmMain.lua", directory))
 source(Utils.getFilename("source/gui/fmMenu.lua", directory))
 source(Utils.getFilename("source/gui/frames/fmMainScreen.lua", directory))
 source(Utils.getFilename("source/gui/hud/fmHud.lua", directory))
+
+local fmMenu
+
+local function isEnabled()
+    return fmMenu ~= nil
+end
+
+function unload()
+    if not isEnabled() then
+        return
+    end
+
+    --removeModEventListener(guidanceSteering)
+
+    --guidanceSteering:delete()
+    --guidanceSteering = nil -- Allows garbage collecting
+    --getfenv(0)["g_guidanceSteering"] = nil
+end
+
