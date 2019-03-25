@@ -9,41 +9,42 @@
 
 FinancialManagerUI = {}
 
-function FinancialManagerUI:new(messageCenter, languageSuffix, inputManager, guiSoundPlayer)
-    local self = setmetatable({}, Gui_mt)
-    self.messageCenter = messageCenter
-    self.languageSuffix = languageSuffix
-    -- input manager reference for event registration
-    self.inputManager = inputManager
-    self.soundPlayer = guiSoundPlayer
-    FocusManager:setSoundPlayer(guiSoundPlayer)
-    self.screens = {} -- screen class -> screen root element
-    self.screenControllers = {} -- screen class -> screen instance
-    self.dialogs = {}
-    self.profiles = {}
-    self.traits = {}
-    self.focusElements = {}
-    self.guis = {}
-    self.nameScreenTypes = {}
-    self.currentGuiName = ""
-    -- registered frame elements which can be referenced to be displayed in multiple places / on multiple screen views
-    self.frames = {} -- frame name -> frame controller element
-    -- state flag to check if the GUI input context is active (context can be multiple levels deep)
-    self.isInputListening = false
-    -- stores event IDs of GUI button/key actions (no movement)
-    self.actionEventIds = {}
-    -- current frame's input target, all inputs of one frame go to this target
-    self.frameInputTarget = nil
-    -- flag for handling of current frame's input, avoids reacting to multiple events per frame for double bindings (e.g. ESC on PC)
-    self.frameInputHandled = false
-    -- subscribers for network events which trigger a local GUI response
-    self.networkEventSubscribers = {}
-    self.changeScreenClosure = self:makeChangeScreenClosure()
-    self.toggleCustomInputContextClosure =self:makeToggleCustomInputContextClosure()
-    self.playSampleClosure = self:makePlaySampleClosure()
-    self.inputactivated = false
-    return self
+debug = 1 -- 0=0ff, 1=some, 2=everything, 3=madness -> Debugmode thanks ZhooL for inspiration
+
+function FinancialManagerUI:onRegisterActionEvents(isSelected, isOnActiveVehicle)
+    if debug > 1 then print("-> " .. myName .. ": onRegisterActionEvents " .. tostring(isSelected) .. ", " .. tostring(isOnActiveVehicle) .. ", S: " .. tostring(self.isServer) .. ", C: " .. tostring(self.isClient) .. mySelf(self)) end
+
+        -- attach our actions
+        for _ ,actionName in pairs(actionList) do
+        local _, eventName = InputBinding.registerActionEvent(g_inputBinding, actionName, self, TSX_EnhancedVehicle.onActionCall, false, true, false, true)
+        end
+    end
 end
+
+function FinancialManagerUI:onActionCall(actionName, keyStatus, arg4, arg5, arg6)
+    if debug > 1 then print("-> " .. myName .. ": onActionCall " .. actionName .. ", keyStatus: " .. keyStatus .. mySelf(self)) end
+    if debug > 2 then
+      print(arg4)
+      print(arg5)
+      print(arg6)
+    end
+  
+    -- front diff
+    if actionName == "fmHomeScreen" then
+        if debug > 1 then print("Homescreen activated") end
+
+      --[[if TSX_EnhancedVehicle.sounds["diff_lock"] ~= nil and TSX_EnhancedVehicle.soundIsOn and g_dedicatedServerInfo == nil then
+        playSample(TSX_EnhancedVehicle.sounds["diff_lock"], 1, 0.5, 0, 0, 0)
+      end
+      self.vData.want[1] = not self.vData.want[1]
+      if self.isClient and not self.isServer then
+        self.vData.is[1] = self.vData.want[1]
+      end
+      TSX_EnhancedVehicle_Event:sendEvent(self, unpack(self.vData.want))]]
+    end
+end
+
+
 
 
 
