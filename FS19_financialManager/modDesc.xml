@@ -27,7 +27,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 			<nl>FinancialManager 0.0.0.1</nl>	
 		</text>
 	</l10n>
-	
+
 	<multiplayer supported="false"/>   
 
 	<extraSourceFiles>
@@ -35,7 +35,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 	</extraSourceFiles>
 	
 	<actions>
-		<action name="fmHomeScreen" axisType="HALF"/>
+		<action name="fmHomeScreen" category="ONFOOT"/>
 	</actions>
 
 	<inputBinding>
