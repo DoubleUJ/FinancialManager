@@ -31,7 +31,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 	<multiplayer supported="false"/>   
 
 	<extraSourceFiles>
-		<sourceFile filename="source/loader.lua" />
+		<sourceFile filename="source/FinancialManager_Loader.lua" />
 	</extraSourceFiles>
 	
 	<actions>
