@@ -18,7 +18,7 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 	Een gebruikersinterface om het financiele gedeelte voor het huren van voertuigen onder spelers af te handelen in multi-player en dedicated server modus.
 ]]></nl>
 	</description>
-	<multiplayer supported="false"/>   
+
 	<iconFilename>fmStoreIcon.dds</iconFilename>
 	<version>0.0.0.1</version>
 	<l10n filenamePrefix="translations/modDesc_l10n">
@@ -27,6 +27,12 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 			<nl>FinancialManager 0.0.0.1</nl>	
 		</text>
 	</l10n>
+	
+	<multiplayer supported="false"/>   
+
+	<extraSourceFiles>
+		<sourceFile filename="source/loader.lua" />
+	</extraSourceFiles>
 	
 	<actions>
 		<action name="fmHomeScreen" axisType="HALF"/>
@@ -37,9 +43,6 @@ Eine Benutzeroberfläche zum Verwalten von Finanzdaten im Multiplayer- und dedic
 			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_f"/>
 		</actionBinding>	
 	</inputBinding>
-	
-	<extraSourceFiles>
-		<sourceFile filename="source/loader.lua" />
-	</extraSourceFiles>
+
   
 </modDesc>
