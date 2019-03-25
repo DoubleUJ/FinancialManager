@@ -16,13 +16,13 @@ function FinancialManagerUI:onRegisterActionEvents(isSelected, isOnActiveVehicle
 
         -- attach our actions
         for _ ,actionName in pairs(actionList) do
-        local _, eventName = InputBinding.registerActionEvent(g_inputBinding, actionName, self, TSX_EnhancedVehicle.onActionCall, false, true, false, true)
+        local _, eventName = InputBinding.registerActionEvent(g_inputBinding, actionName, self, FinancialManagerUI.onActivate, false, true, false, true)
         end
     end
 end
 
-function FinancialManagerUI:onActionCall(actionName, keyStatus, arg4, arg5, arg6)
-    if debug > 1 then print("-> " .. myName .. ": onActionCall " .. actionName .. ", keyStatus: " .. keyStatus .. mySelf(self)) end
+function FinancialManagerUI:onActivate(actionName, keyStatus, arg4, arg5, arg6)
+    if debug > 1 then print("-> " .. myName .. ": onActivate " .. actionName .. ", keyStatus: " .. keyStatus .. mySelf(self)) end
     if debug > 2 then
       print(arg4)
       print(arg5)
