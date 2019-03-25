@@ -16,7 +16,7 @@ source(Utils.getFilename("source/gui/hud/fmFinancialManagerUI.lua", directory)) 
 source(Utils.getFilename("source/gui/frames/fmFinancialScreen.lua", directory)) -- Hier de functies van het "tabbed menu" zetten die financiele zaken afhandelen 
 
 --source(Utils.getFilename("source/FinancialManager.lua", directory)) -- Algemene functies plaatsten als die nodig zijn en er zijn. 
-
+local modDesc = loadXMLFile("modDesc", g_currentModDirectory .. "modDesc.xml");
 
 -- Register key events
 function FinancialManager_Loader:keyEvent(unicode, sym, modifier, isDown)
