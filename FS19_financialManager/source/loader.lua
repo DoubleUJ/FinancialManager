@@ -17,3 +17,4 @@ source(Utils.getFilename("source/FinancialManager.lua", directory)) -- Algemene 
 
 local FinancialManager
 
+print("Loader is loaded")
