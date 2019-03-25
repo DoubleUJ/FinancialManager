@@ -12,11 +12,12 @@ FinancialManagerUI = {}
 debug = 3 -- 0=0ff, 1=some, 2=everything, 3=madness -> Debugmode thanks ZhooL for inspiration
 
 function FinancialManagerUI:onRegisterActionEvents(isSelected, isOnActiveVehicle)
-    if debug > 1 then print("-> " .. myName .. ": onRegisterActionEvents " .. tostring(isSelected) .. ", " .. tostring(isOnActiveVehicle) .. ", S: " .. tostring(self.isServer) .. ", C: " .. tostring(self.isClient) .. mySelf(self)) end
+    if not self.isClient then
+
+        if debug > 1 then print("-> " .. myName .. ": onRegisterActionEvents " .. tostring(isSelected) .. ", " .. tostring(isOnActiveVehicle) .. ", S: " .. tostring(self.isServer) .. ", C: " .. tostring(self.isClient) .. mySelf(self)) end
 
         -- attach our actions
-        for _ ,actionName in pairs(actionList) do
-            local _, eventName = InputBinding.registerActionEvent(g_inputBinding, actionName, self, FinancialManagerUI.onActivate, false, true, false, true)
+        local _, eventName = InputBinding.registerActionEvent(g_inputBinding, actionName, self, FinancialManagerUI.onActivate, false, true, false, true)
     end
 end
 
