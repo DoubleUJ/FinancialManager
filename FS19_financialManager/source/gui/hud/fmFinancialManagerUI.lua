@@ -45,27 +45,5 @@ function FinancialManagerUI:new(messageCenter, languageSuffix, inputManager, gui
     return self
 end
 
-function FinancialManagerUI:keyEvent(...)
-end
-
-function FinancialManagerUI:activateScreen()
-    --TODO Zorgen dat dit geactiveerd wordt door de input
-    print("activated")
-    self.inputactivated = false
-end
-
-function FinancialManagerUI:update()
-    if g_gui.currentGui == nil and g_currentMission.controlledVehicle == nil then -- check of je in een voertuig zit
-        -- Als inputactivated false is cache input en activeer functie anders zet false
-        if not self.inputactivated then 
-                g_inputBinding:registerActionEvent(InputAction.fmHomeScreen, FinancialManagerUI, FinancialManagerUI.activateScreen, false, true, false, false)
-            self.inputactivated = true
-        else
-            self.inputactivated = false
-        end
-    end
-end
 
 
-print("  Loaded Financial Manager by Max-Agrisim   ")
-addModEventListener(FinancialManagerUI)
